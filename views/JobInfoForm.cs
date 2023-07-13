@@ -16,5 +16,7 @@ namespace opc_ua_reader_test.views
         {
             InitializeComponent();
         }
+
+
     }
 }

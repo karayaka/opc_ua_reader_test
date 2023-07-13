@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnJobInfoPage = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
+            // 
+            // btnJobInfoPage
+            // 
+            this.btnJobInfoPage.Location = new System.Drawing.Point(12, 12);
+            this.btnJobInfoPage.Name = "btnJobInfoPage";
+            this.btnJobInfoPage.Size = new System.Drawing.Size(147, 29);
+            this.btnJobInfoPage.TabIndex = 0;
+            this.btnJobInfoPage.Text = "İş Bilgileri(JobInfo)";
+            this.btnJobInfoPage.Click += new System.EventHandler(this.btnJobInfoPage_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 453);
+            this.Controls.Add(this.btnJobInfoPage);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +53,8 @@
         }
 
         #endregion
+
+        private DevExpress.XtraEditors.SimpleButton btnJobInfoPage;
     }
 }
 

@@ -28,12 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.SuspendLayout();
+            // 
+            // JobInfoForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1081, 450);
+            this.Name = "JobInfoForm";
             this.Text = "JobInfoForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
