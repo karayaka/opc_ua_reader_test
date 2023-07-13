@@ -17,7 +17,7 @@ namespace opc_ua_reader_test
             InitializeComponent();
         }
 
-        private void btnJobInfoPage_Click(object sender, EventArgs e)
+        private void btnJobInfoForm_Click(object sender, EventArgs e)
         {
 
         }
