@@ -31,13 +31,16 @@ namespace opc_ua_reader_test.views
                     new Guid(txtJobGuid.Text)
                 );
             var jobInfos = JsonConvert.DeserializeObject<List<JobInfoModel>>(objs[0].ToString());
-
+            if(jobInfo!=null)
+                lblResult.Text = jobInfos.Count.ToString();
             foreach (var item in jobInfos)
             {
                 if (!jobInfo.Any(t => t.JobGuid == item.JobGuid))
                     jobInfo.Add(item);
             }
             fillDataGrid();
+
+            MessageBox.Show("Okudu");
         }
 
 

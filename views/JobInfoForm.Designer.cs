@@ -34,6 +34,7 @@
             this.btnReadData = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grdJobGuid = new System.Windows.Forms.DataGridView();
+            this.lblResult = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdJobGuid)).BeginInit();
             this.SuspendLayout();
@@ -66,13 +67,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblResult);
             this.panel1.Controls.Add(this.txtJobGuid);
             this.panel1.Controls.Add(this.btnReadData);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1081, 47);
+            this.panel1.Size = new System.Drawing.Size(1139, 47);
             this.panel1.TabIndex = 3;
             // 
             // grdJobGuid
@@ -83,14 +85,23 @@
             this.grdJobGuid.Name = "grdJobGuid";
             this.grdJobGuid.RowHeadersWidth = 51;
             this.grdJobGuid.RowTemplate.Height = 24;
-            this.grdJobGuid.Size = new System.Drawing.Size(1081, 403);
+            this.grdJobGuid.Size = new System.Drawing.Size(1139, 403);
             this.grdJobGuid.TabIndex = 4;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(1070, 15);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(44, 16);
+            this.lblResult.TabIndex = 3;
+            this.lblResult.Text = "label2";
             // 
             // JobInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 450);
+            this.ClientSize = new System.Drawing.Size(1139, 450);
             this.Controls.Add(this.grdJobGuid);
             this.Controls.Add(this.panel1);
             this.Name = "JobInfoForm";
@@ -110,5 +121,6 @@
         private System.Windows.Forms.Button btnReadData;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView grdJobGuid;
+        private System.Windows.Forms.Label lblResult;
     }
 }

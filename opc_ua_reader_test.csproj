@@ -245,6 +245,12 @@
     <Compile Include="views\JobInfoForm.Designer.cs">
       <DependentUpon>JobInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\RunPartHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\RunPartHistoryForm.Designer.cs">
+      <DependentUpon>RunPartHistoryForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +265,9 @@
     </Compile>
     <EmbeddedResource Include="views\JobInfoForm.resx">
       <DependentUpon>JobInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\RunPartHistoryForm.resx">
+      <DependentUpon>RunPartHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
