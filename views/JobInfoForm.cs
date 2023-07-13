@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using DevExpress.Xpo.Exceptions;
+using Newtonsoft.Json;
+using opc_ua_reader_test.configs;
 using opc_ua_reader_test.Models;
 using opc_ua_reader_test.Repositorys;
 using System;
@@ -23,15 +25,34 @@ namespace opc_ua_reader_test.views
         public void rederJobınfo() {
 
             var objs = OpcReaderRepository.Instance.CallMethodts(
-                    opcUrl,
+                    configs.configs.opcIP,
                     "ns=2;s=History",
                     "ns=2;s=History.GetJobInfo",
-                    jobInfoGuid
+                    new Guid(txtJobGuid.Text)
                 );
-            jobInfo = JsonConvert.DeserializeObject<List<JobInfoModel>>(objs[0].ToString());
+            var jobInfos = JsonConvert.DeserializeObject<List<JobInfoModel>>(objs[0].ToString());
 
+            foreach (var item in jobInfos)
+            {
+                if (!jobInfo.Any(t => t.JobGuid == item.JobGuid))
+                    jobInfo.Add(item);
+            }
+            fillDataGrid();
         }
 
 
+        public void fillDataGrid()
+        {
+            var bindingList = new BindingList<JobInfoModel>(jobInfo);
+
+            var binds = new BindingSource(bindingList, null);
+
+            grdJobGuid.DataSource = binds;
+        }
+
+        private void btnReadData_Click(object sender, EventArgs e)
+        {
+            rederJobınfo();
+        }
     }
 }

@@ -31,11 +31,11 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.txtJobGuid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReadData = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdJobGuid = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdJobGuid)).BeginInit();
             this.SuspendLayout();
             // 
             // txtJobGuid
@@ -54,19 +54,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "JobGuid:";
             // 
-            // button1
+            // btnReadData
             // 
-            this.button1.Location = new System.Drawing.Point(904, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Read Data";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnReadData.Location = new System.Drawing.Point(904, 8);
+            this.btnReadData.Name = "btnReadData";
+            this.btnReadData.Size = new System.Drawing.Size(160, 23);
+            this.btnReadData.TabIndex = 2;
+            this.btnReadData.Text = "Read Data";
+            this.btnReadData.UseVisualStyleBackColor = true;
+            this.btnReadData.Click += new System.EventHandler(this.btnReadData_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txtJobGuid);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnReadData);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -74,29 +75,29 @@
             this.panel1.Size = new System.Drawing.Size(1081, 47);
             this.panel1.TabIndex = 3;
             // 
-            // dataGridView1
+            // grdJobGuid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1081, 403);
-            this.dataGridView1.TabIndex = 4;
+            this.grdJobGuid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdJobGuid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdJobGuid.Location = new System.Drawing.Point(0, 47);
+            this.grdJobGuid.Name = "grdJobGuid";
+            this.grdJobGuid.RowHeadersWidth = 51;
+            this.grdJobGuid.RowTemplate.Height = 24;
+            this.grdJobGuid.Size = new System.Drawing.Size(1081, 403);
+            this.grdJobGuid.TabIndex = 4;
             // 
             // JobInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdJobGuid);
             this.Controls.Add(this.panel1);
             this.Name = "JobInfoForm";
             this.Text = "JobInfoForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdJobGuid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,8 +107,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txtJobGuid;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnReadData;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdJobGuid;
     }
 }
