@@ -23,5 +23,11 @@ namespace opc_ua_reader_test
             var form = new JobInfoForm();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form=new RunPartHistoryForm();
+            form.Show();
+        }
     }
 }

@@ -16,5 +16,15 @@ namespace opc_ua_reader_test.views
         {
             InitializeComponent();
         }
+        bool satrtData=false;
+        private void btnReadData_Click(object sender, EventArgs e)
+        {
+            var date = startDate.Value;
+        }
+
+        public void readData()
+        {
+
+        }
     }
 }

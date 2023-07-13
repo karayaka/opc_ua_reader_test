@@ -160,3 +160,4 @@ C:\Users\cagri\source\repos\opc_ua_reader_test\opc_ua_reader_test\obj\Debug\opc_
 C:\Users\cagri\source\repos\opc_ua_reader_test\opc_ua_reader_test\obj\Debug\opc_ua_reader_test.csproj.CopyComplete
 C:\Users\cagri\source\repos\opc_ua_reader_test\opc_ua_reader_test\obj\Debug\opc_ua_reader_test.exe
 C:\Users\cagri\source\repos\opc_ua_reader_test\opc_ua_reader_test\obj\Debug\opc_ua_reader_test.pdb
+C:\Users\cagri\source\repos\opc_ua_reader_test\opc_ua_reader_test\obj\Debug\opc_ua_reader_test.views.RunPartHistoryForm.resources

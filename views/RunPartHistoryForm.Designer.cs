@@ -29,56 +29,68 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.endDate = new System.Windows.Forms.DateTimePicker();
+            this.startDate = new System.Windows.Forms.DateTimePicker();
+            this.btnReadData = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnReadData);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.endDate);
+            this.panel1.Controls.Add(this.startDate);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1133, 64);
             this.panel1.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // label2
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(92, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(212, 22);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(386, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(212, 22);
-            this.dateTimePicker2.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(313, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Bitiş";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Başlangıç";
             // 
-            // label2
+            // endDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(313, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Bitiş";
+            this.endDate.Location = new System.Drawing.Point(386, 3);
+            this.endDate.Name = "endDate";
+            this.endDate.Size = new System.Drawing.Size(212, 22);
+            this.endDate.TabIndex = 1;
+            // 
+            // startDate
+            // 
+            this.startDate.Location = new System.Drawing.Point(92, 3);
+            this.startDate.Name = "startDate";
+            this.startDate.Size = new System.Drawing.Size(212, 22);
+            this.startDate.TabIndex = 0;
+            // 
+            // btnReadData
+            // 
+            this.btnReadData.Location = new System.Drawing.Point(1030, 5);
+            this.btnReadData.Name = "btnReadData";
+            this.btnReadData.Size = new System.Drawing.Size(75, 23);
+            this.btnReadData.TabIndex = 4;
+            this.btnReadData.Text = "Başla";
+            this.btnReadData.UseVisualStyleBackColor = true;
+            this.btnReadData.Click += new System.EventHandler(this.btnReadData_Click);
             // 
             // RunPartHistoryForm
             // 
@@ -99,7 +111,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker endDate;
+        private System.Windows.Forms.DateTimePicker startDate;
+        private System.Windows.Forms.Button btnReadData;
     }
 }
