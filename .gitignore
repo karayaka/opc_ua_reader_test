@@ -5,3 +5,6 @@
 /obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 /obj/Debug/
 /bin/Debug/opc_ua_reader_test.exe
+/bin/Debug
+/obj/Debug/opc_ua_reader_test.exe
+/obj/Debug/opc_ua_reader_test.pdb
